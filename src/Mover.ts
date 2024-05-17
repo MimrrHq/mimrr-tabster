@@ -35,6 +35,10 @@ import { dom } from "./DOMAPI";
 
 const _inputSelector = ["input", "textarea", "*[contenteditable]"].join(", ");
 
+function add(x:number, y: number){
+    return x + y * 2;
+}
+
 class MoverDummyManager extends DummyInputManager {
     private _tabster: Types.TabsterCore;
     private _getMemorized: () => WeakHTMLElement | undefined;
